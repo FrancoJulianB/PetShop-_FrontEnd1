@@ -129,6 +129,7 @@ div.productosDestacados ul li a{
 section.articulos{
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 a img{
     max-height: 265px;
@@ -261,6 +262,7 @@ section.newsletter label{
 footer div.topfooter{
     display: flex;
     background-color: #3C2313;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;

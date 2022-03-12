@@ -1,0 +1,324 @@
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/*Topbar del header*/
+header section.topbar{
+    height: 20px;
+    background-color: #222222;
+    color:#F3F3F3;
+    display: flex;
+}
+div.topbarLeft{
+    justify-content: flex-start;
+    flex-grow:1;
+    margin-left: 90px;
+    font-size: 10px;
+    align-self: center;
+}
+div.topbarRight{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow:1;
+    margin-right: 52px;
+    font-size: 10px;
+    align-items: center;
+}
+div.topbarRight nav {
+    margin-left: 12px;
+}
+
+/*Bottombar del header*/
+section.bottomHeader{
+    height: 62px;
+    background-color: #F0A83E;
+    display: flex;
+    align-items: center;
+}
+div.logoHeader{
+    flex: 1;
+}
+div.logoHeader img{
+    height: 23px;
+    margin-left: 40px;
+}
+div.menuTopbar{
+    flex: 1;
+}
+ul.listaTopbar{
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+ul.listaTopbar li{
+    margin: 10px;
+}
+ul.listaTopbar li a{
+    color: #FFFFFF;
+}
+ul.listaTopbar i{
+    margin-right: 2px;
+}
+/*Slide de bienvenida*/
+section.slide{
+    min-height: 409px;
+    background-image: url("../img/Imagen1.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;
+    text-align: center;
+    padding-right: 12px;
+}
+div.bienvenida div{
+    background-color: #FFFFFF;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: 400;
+    height: 54px;
+    width: 365px;
+    line-height: 54px;
+}
+div.bienvenida p{
+    color:#3C2313;
+    font-size: 16px;
+}
+div.bienvenida button{
+    height: 49px;
+    width: 141px;
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 5px;
+}
+/*Seccion destacados SIN PRODUCTOS*/
+div.productosDestacados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+div.productosDestacados i{
+    color: #F0A83E;
+    font-size: 71px;
+}
+div.productosDestacados h1{
+    font-weight: 700;
+    font-size: 40px;
+    color:#3C2313;
+}
+div.productosDestacados ul{
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+    gap:30px;
+    padding-left:0px;
+}
+div.productosDestacados ul li a{
+    color: #666666;
+}
+/*Seccion de productos*/
+section.articulos{
+    display:flex;
+    justify-content: space-around;
+}
+a img{
+    max-height: 265px;
+}
+section.articulos article{
+    text-align: center;
+    background-color: #FBFAF6;
+    font-size: 15px;
+}
+h4{
+    color:#3C2313;
+}
+article p{
+    color: #F0A83E;
+}
+/*Seccion contactanos*/
+section.contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 40px;
+    padding:10px;
+
+}
+section.contactanos h2{
+    font-size: 25px;
+}
+section.contactanos form{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+}
+input#GET-name,section.contactanos input#GET-email, input#GET-phone{
+    background-color: #3C2313;
+    height: 40px;
+    width: 340px;
+    border-radius: 15px;
+    margin:10px;
+}
+label.nombre{
+    font-size: 9px;
+    color:white;
+    position:absolute;
+    top: 27px;
+    left: 28px;
+}
+label.correo{
+    font-size: 9px;
+    color:white;
+    position:absolute;
+    top: 93px;
+    left: 28px;
+}
+label.telefono{
+    font-size: 9px;
+    color:white;
+    position:absolute;
+    top: 160px;
+    left: 28px;
+}
+div.botones{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+div.botones input{
+    width: 110px;
+    height: 34px;
+    border-style: none;
+    border-radius: 15px;
+    margin:10px;
+    color:white;
+}
+div.botones input.resetear{
+    background-color: #8A8787;
+}
+div.botones input.enviar{
+    background-color: #F0A83E;
+}
+/*Newsletter*/
+section.newsletter{
+    display: flex;
+    background-color: #F0A83E;
+    align-items: center;
+    margin-top: 50px;
+}
+div.suscribete{
+    flex-grow: 1;
+    font-size: 20px;
+    margin-left: 23px;
+    display: flex;
+    align-items: center;
+}
+div.suscribete i{
+    font-size: 30px;
+    margin-right:10px;
+}
+section.newsletter form{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right:47px;
+    align-items: center;
+    position:relative;
+    gap:5px;
+}
+section.newsletter input.textbox{
+    width: 271px;
+    height: 40px;
+    border-style: none;
+    border-radius: 15px;
+}
+section.newsletter label{
+    position: absolute;
+    right: 215px;
+    font-size: 9px;
+    color: #A0A0A0;
+}
+.botonSuscribirse{
+    width: 70px;
+    height: 34px;
+    border-style: none;
+    background: #3C2313;
+    border-radius: 15px;
+    color:#FFFFFF;
+    font-size: 9px;
+}
+/*Top-Footer con logo*/
+footer div.topfooter{
+    display: flex;
+    background-color: #3C2313;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+div.footerleft{
+    flex:1;
+    display:flex;
+}
+div.footerleft div.iconos{
+    display:flex;
+    flex-direction: column;
+    font-size: 40px;
+    color:white;
+    padding-left: 70px;
+}
+div.iconos i{
+    background-color: #8A8787;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    border-style: solid;
+    border-width:4px;
+    border-color: #786960;
+    text-align: center;
+    line-height: 56px;
+    margin:10px;
+}
+div.footerleft div.texto{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.footerleft div.texto div h3{
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    margin:0px;
+}
+div.footerleft div.texto p{
+    color:#8A8787;
+    font-size:10px;
+    margin:0px;
+}
+div.footerRight{
+    align-self: center;
+}
+div.footerRight img{
+    height: 23px;
+    margin-right: 40px;
+}
+/*Bottom-Footer*/
+div.bottomFooter{
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #222222;
+}
+div.bottomFooter p{
+    margin:0px;
+}

@@ -7,22 +7,17 @@ a {
 }
 /*Topbar del header*/
 header section.topbar{
-    height: 20px;
     background-color: #222222;
     color:#F3F3F3;
     display: flex;
+    justify-content: space-between;
 }
 div.topbarLeft{
-    justify-content: flex-start;
-    flex-grow:1;
-    margin-left: 90px;
+    margin: 5px 0px 5px 90px;
     font-size: 10px;
-    align-self: center;
 }
 div.topbarRight{
     display: flex;
-    justify-content: flex-end;
-    flex-grow:1;
     margin-right: 52px;
     font-size: 10px;
     align-items: center;
@@ -37,16 +32,18 @@ section.bottomHeader{
     background-color: #F0A83E;
     display: flex;
     align-items: center;
-}
-div.logoHeader{
-    flex: 1;
+    justify-content: space-between;
 }
 div.logoHeader img{
     height: 23px;
-    margin-left: 40px;
+    margin-left: 6vw;
 }
-div.menuTopbar{
-    flex: 1;
+
+#hamburguer{
+    color: #F3F3F3;
+    font-size: 1.5rem;
+    padding-right: 6vw;
+    display: none;
 }
 ul.listaTopbar{
     display: flex;
@@ -101,9 +98,10 @@ div.bienvenida button{
 /*Seccion destacados SIN PRODUCTOS*/
 div.productosDestacados{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     padding: 25px;
 }
 div.productosDestacados i{
@@ -129,10 +127,25 @@ div.productosDestacados ul li a{
 section.articulos{
     display:flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
-a img{
-    max-height: 265px;
+section.articulos article div{
+    width: 100%;
+    height: 265px;
+}
+div.fotoChurrasquito{
+    background-image: url(../img/churrasquito.png);
+    background-size: cover;
+    background-position: 50%;
+}
+div.fotoComedero{
+    background-image: url(../img/comedero.png);
+    background-size: cover;
+    background-position: 50%;
+}
+div.fotoHuesito{
+    background-image: url(../img/huesito.png);
+    background-size: cover;
+    background-position: 50%;
 }
 section.articulos article{
     text-align: center;
@@ -215,24 +228,20 @@ section.newsletter{
     display: flex;
     background-color: #F0A83E;
     align-items: center;
-    margin-top: 50px;
+    justify-content: space-around;
 }
 div.suscribete{
-    flex-grow: 1;
     font-size: 20px;
-    margin-left: 23px;
     display: flex;
     align-items: center;
 }
 div.suscribete i{
     font-size: 30px;
-    margin-right:10px;
+    padding: 0px 10px 0px 0px;
 }
 section.newsletter form{
-    flex-grow: 1;
     display: flex;
     justify-content: flex-end;
-    margin-right:47px;
     align-items: center;
     position:relative;
     gap:5px;
@@ -262,14 +271,11 @@ section.newsletter label{
 footer div.topfooter{
     display: flex;
     background-color: #3C2313;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content:space-between;
+    padding: 10px 60px;
 
 }
 div.footerleft{
-    flex:1;
     display:flex;
 }
 div.footerleft div.iconos{
@@ -277,7 +283,6 @@ div.footerleft div.iconos{
     flex-direction: column;
     font-size: 40px;
     color:white;
-    padding-left: 70px;
 }
 div.iconos i{
     background-color: #8A8787;
@@ -312,7 +317,6 @@ div.footerRight{
 }
 div.footerRight img{
     height: 23px;
-    margin-right: 40px;
 }
 /*Bottom-Footer*/
 div.bottomFooter{
@@ -324,4 +328,43 @@ div.bottomFooter{
 div.bottomFooter p{
     margin:0px;
     padding:2px
+}
+@media (max-width: 1250px){
+    section article{
+        width: 25%;
+    }
+}
+@media (max-width:780px){
+    header section.topbar{
+    display: none;
+    }
+    div.menuTopbar nav{
+        display: none;
+    }
+    #hamburguer{
+        display:flex;
+    }
+    section.articulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10vh;
+    }
+    section article{
+        width: 75%;
+    }
+    section.slide{
+        align-items: center;
+    }
+    div.topfooter{
+        flex-direction: column;
+        align-items:center;
+    }
+    section.newsletter{
+        flex-direction: column;
+    }
+    section.newsletter form{
+        padding: 0px 0px 15px 0px;
+    }
 }

@@ -128,6 +128,12 @@ section.articulos{
     display:flex;
     justify-content: space-around;
 }
+section.articulos article{
+    text-align: center;
+    background-color: #FBFAF6;
+    font-size: 15px;
+    width: 23%;
+}
 section.articulos article div{
     width: 100%;
     height: 265px;
@@ -146,11 +152,6 @@ div.fotoHuesito{
     background-image: url(../img/huesito.png);
     background-size: cover;
     background-position: 50%;
-}
-section.articulos article{
-    text-align: center;
-    background-color: #FBFAF6;
-    font-size: 15px;
 }
 h4{
     color:#3C2313;
@@ -351,7 +352,7 @@ div.bottomFooter p{
         justify-content: space-around;
         gap: 10vh;
     }
-    section article{
+    section.articulos article{
         width: 75%;
     }
     section.slide{

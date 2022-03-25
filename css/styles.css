@@ -179,31 +179,20 @@ section.contactanos form{
 }
 input#GET-name,section.contactanos input#GET-email, input#GET-phone{
     background-color: #3C2313;
+    color: #F3F3F3;
     height: 40px;
     width: 340px;
     border-radius: 15px;
     margin:10px;
 }
-label.nombre{
+section.contactanos ::placeholder{
     font-size: 9px;
     color:white;
-    position:absolute;
-    top: 27px;
-    left: 28px;
+    padding-left: 15px;
 }
-label.correo{
+section.newsletter ::placeholder{
     font-size: 9px;
-    color:white;
-    position:absolute;
-    top: 93px;
-    left: 28px;
-}
-label.telefono{
-    font-size: 9px;
-    color:white;
-    position:absolute;
-    top: 160px;
-    left: 28px;
+    padding-left: 15px;
 }
 div.botones{
     display: flex;
